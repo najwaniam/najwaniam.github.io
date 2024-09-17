@@ -47,12 +47,14 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    table-layout: auto;
 }
 
 th, td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #333;
+    word-wrap: break-word;
 }
 
 th {
@@ -66,12 +68,14 @@ th {
 }
 
 .total {
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
     background-color: blue;
-    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    max-width: 100%;
 }
+
 
 .pelengkap {
     margin-top: 30px;
@@ -130,30 +134,33 @@ th {
 }
 
 /* untuk tampilan hp atau sejenisnya */
-@media (max-width: 600px) {
-    body {
+@media (max-width: 480px) {
+    .kotak {
         padding: 10px;
     }
 
-    .kotak {
-        padding: 15px;
+    th, td {
+        font-size: 12px;
+        padding: 8px;
     }
 
-    table, th, td {
-        font-size: 14px;
+    .total {
+        font-size: 16px;
+        padding: 8px 15px;
     }
 
     .Menu img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
     .gopay .logo {
-        width: 80px;
+        width: 70px;
     }
 
     .qr-code {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 }
+
