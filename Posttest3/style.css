@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  background-color: rgb(40, 40, 40);
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+/* Navbar */
+
+nav {
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: dimgray;
+}
+
+nav a {
+  color: white;
+}
+
+/* Table */
+
+.rank {
+  background-color: rgb(230, 230, 230);
+  padding: 20px 30px;
+}
+
+.rank .title {
+  display: flex;
+  gap: 5px;
+}
+
+.rank .title img {
+  height: 40px;
+  width: auto;
+}
+
+.rank h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.rank-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-search {
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+table {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(230, 230, 230);
+  border: 1px solid black;
+  color: white;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #3b4a5e;
+}
+th {
+  background-color: #1e2b3c;
+  color: white;
+}
+
+td:first-child, th:first-child {
+  text-align: center;
+  width: 1%;
+  white-space: nowrap;
+}
+td:last-child {
+  text-align: center;
+}
+tr:nth-child(odd) {
+  background-color: rgb(230, 230, 230);
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: #2a3a4f;
+}
+
+.highlight {
+  background-color: rgb(230, 230, 230);
+}
+td:nth-child(3), th:nth-child(3) {
+  text-align: center;
+}
+td:nth-child(4) {
+  text-align: right;
+}
+
+/* Footer */
+
+.footer-container {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 30px;
+  background-color: rgb(40, 40, 40);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  flex-wrap: wrap;
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.logo-img {
+  vertical-align: middle;
+}
+
+.footer-text {
+  margin-bottom: 0;
+}
+
+.footer-right {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-right li {
+  margin-left: 20px;
+}
+
+.social-link {
+  color: white; 
+  text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: url('images/hero.png') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.about-me {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-me h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.about-me p {
+  margin: 0;
+  font-size: 21px;
+}
+
+.biodata {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    display: none; /* Hide the nav initially */
+  }
+
+  nav.active {
+    display: flex; /* Show nav when active */
+  }
+
+  .hamburger {
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+  }
+
+  .rank {
+    padding: 10px 20px;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode .rank {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode tr:nth-child(odd) {
+  background-color: dimgray;
+  color: black;
+}
+
+body.dark-mode tr:nth-child(even) {
+  background-color: rgb(40, 40, 40);
+}
+
+body.dark-mode .player-search {
+  background-color: dimgray;
+  color: white;
+}
+
+.dark-mode-toggle {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+/* Initial styles for navigation */
+nav {
+  font-size: 21px;
+  display: flex;
+  justify-content: space-between; /* Space between hamburger and links */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: dimgray;
+}
+
+/* Hide nav links initially on mobile */
+.nav-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav links on mobile */
+    flex-direction: column; /* Stack links vertically when shown */
+    background-color: dimgray; /* Optional: Set background color for dropdown */
+    position: absolute; /* Position links below the navbar */
+    top: 50px; /* Adjust as needed */
+    right: 0; /* Align to the right */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it appears on top */
+  }
+
+  nav.active .nav-links {
+    display: flex; /* Show nav links when nav is active */
+  }
+
+  .hamburger {
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+    display: block; /* Show hamburger on mobile */
+  }
+
+  nav {
+    flex-direction: row; /* Keep the hamburger and links in a row */
+  }
+}
+
+/* Hide hamburger in larger screens */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none; /* Hide hamburger on larger screens */
+  }
+}
