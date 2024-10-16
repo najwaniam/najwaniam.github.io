@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda - Tracker Stats Team Esport</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/valorant.png" alt="Valorant" />
+      <h1>Tracker Stats Team Esport</h1>
+    </header>
+
+    <nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="about_me.html">Tentang Saya</a>
+      </div>
+
+      <button class="dark-mode-toggle" id="dark-mode-toggle"><i class="fa-solid fa-sun"></i></button>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Tracker Stats Team Esport</h1>
+        <p>Lacak yang Terbaik, Jadilah yang Terbaik. Temukan Pemain Terbaik di Dunia Esports</p>
+      </div>
+    </section>    
+
+    <section class="slideshow">
+      <h2>Galeri Foto</h2>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="foto1.jpg" alt="Foto 1">
+        </div>
+        <div class="mySlides fade">
+          <img src="foto2.jpg" alt="Foto 2">
+        </div>
+        <div class="mySlides fade">
+          <img src="foto3.jpg" alt="Foto 3">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </section>
+
+    <section class="rank">
+      <div class="rank-header">
+        <div class="title">
+          <img src="images/juara.png" alt="" />
+          <h2>JUARA SAAT INI</h2>
+        </div>
+
+        <div>
+          <i
+            class="fa-solid fa-magnifying-glass fa-lg"
+            style="margin-right: 5px"
+          ></i>
+          <input type="text" class="player-search" placeholder="Cari Tim" />
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Win%</th>
+            <th>Score</th>
+            <th>W - L</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bubblegun</td>
+            <td>83.3%</td>
+            <td>500</td>
+            <td>5 - 1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>XERXIA</td>
+            <td>83.3%</td>
+            <td>500</td>
+            <td>5 - 1</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>LA FAMILIA</td>
+            <td>83.3%</td>
+            <td>500</td>
+            <td>5 - 1</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>ARF Team</td>
+            <td>83.3%</td>
+            <td>500</td>
+            <td>5 - 1</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>FPT Flash</td>
+            <td>66.7%</td>
+            <td>400</td>
+            <td>4 - 2</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>AiM FortissyGod</td>
+            <td>66.7%</td>
+            <td>400</td>
+            <td>4 - 2</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>THE OVERDOGS</td>
+            <td>66.7%</td>
+            <td>400</td>
+            <td>4 - 2</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Team NKT</td>
+            <td>80.0%</td>
+            <td>400</td>
+            <td>4 - 1</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="footer-container">
+      <footer class="footer">
+        <div class="footer-left">
+          <a href="" class="logo-link">
+            <img src="images/valorant.png" alt="Valorant" width="50" class="logo-img">
+          </a>
+          <span class="footer-text">&copy; Wiam Wiam Wiam</span>
+        </div>
+    
+        <ul class="footer-right">
+          <li>
+            <a class="social-link" href="#">
+              <i class="fa-brands fa-whatsapp fa-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <i class="fa-solid fa-envelope fa-xl"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>  
+    
+    <script src="script.js"></script>
+  </body>
+</html>
